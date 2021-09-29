@@ -1,64 +1,97 @@
-footer {
-    width: 100%;
-    background-color: #212529;;
-    min-height: 250px;
-    padding: 10px 0px 25px 0px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -10px;
 }
 
-.pt2 {
-    padding-top: 40px;
-    margin-bottom: 20px;
+.social-buttons__button {
+    margin: 10px 5px 0;
 }
 
-footer p {
-    font-size: 13px;
-    color: #ffffff;
-    padding-bottom: 0px;
-    margin-bottom: 8px;
-}
-
-.foote_bottom_ul_amrc {
-    list-style-type: none;
-    padding: 0px;
-    display: table;
-    margin-top: 10px;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-left: auto;
-}
-
-.foote_bottom_ul_amrc li {
-    display: inline;
-}
-
-.foote_bottom_ul_amrc li a {
-    color: white;
-    margin: 0 12px;
-}
-
-.bottom-border {
-    border-bottom: 1px solid white;
-}
-
-.social-links2 {
-    font-size: 1rem;
-    width: 35px;
-    text-align: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin: 5px 2px;
-    display: inline-block;
-    border-radius: 50%;
-    border: 2px solid white;
-    color: white;
-}
-
-.social-links2:hover {
-    color: white;
+.social-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 70px;
+    height: 70px;
     text-decoration: none;
-    background-color: #0487cc;
-    border-color: #0487cc;
-    box-shadow: 0 0 3px #0487cc;
+    border-radius: 100%;
+    background: #fff;
+    text-align: center;
+}
+
+.social-button::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+.social-button:focus, .social-button:hover {
+    color: #fff;
+}
+
+.social-button:focus::after, .social-button:hover::after {
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    margin-left: calc(-50% - 1px);
+}
+
+.social-button i, .social-button svg {
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.social-button i {
+    font-size: 28px;
+}
+
+.social-button svg {
+    height: 40%;
+    width: 40%;
+}
+
+.social-button--facebook {
+    color: #3b5999;
+}
+
+.social-button--facebook::after {
+    background: #3b5999;
+}
+
+.social-button--wa {
+    color: #7da10e;
+}
+
+.social-button--wa::after {
+    background: #7da10e;
+}
+
+.social-button--instagram {
+    color: #e4405f;
+}
+
+.social-button--instagram::after {
+    background: #e4405f;
+}
+
+.social-button--email {
+    color: #c12127;
+}
+
+.social-button--email::after {
+    background: #c12127;
+}
+
+hr{
+    border-bottom: #fff;
 }
