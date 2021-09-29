@@ -15,11 +15,11 @@
     justify-content: center;
     align-items: center;
     outline: none;
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     text-decoration: none;
     border-radius: 100%;
-    background: #fff;
+    background: white;
     text-align: center;
 }
 
@@ -93,5 +93,25 @@
 }
 
 hr{
-    border-bottom: #fff;
+    border: 1px solid limegreen;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul a:hover{
+    color: limegreen;;
+    
+}
+
+footer p a{
+    text-decoration: none;
+    color: white;
+}
+
+footer p a:hover{
+    color: limegreen;;
+    
 }
