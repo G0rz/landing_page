@@ -1,12 +1,12 @@
-.home-banner{
+.home-banner {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url(../img/banner.jpeg);
+  background-image: url('../img/img3.jpg');
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -31,25 +31,30 @@
   background-color: rgb(27, 201, 27);
   border-color: limegreen;
 }
+
 .btn-success:hover {
   color: #fff;
   background-color: rgb(9, 175, 9);
   border-color: rgb(27, 201, 27);
 }
-.btn-check:focus + .btn-success, .btn-success:focus {
+
+.btn-check:focus+.btn-success, .btn-success:focus {
   color: #fff;
   background-color: rgb(9, 175, 9);
   border-color: rgb(27, 201, 27);
   box-shadow: 0 0 0 0.25rem rgba(15, 221, 8, 0.5);
 }
-.btn-check:checked + .btn-success, .btn-check:active + .btn-success, .btn-success:active, .btn-success.active, .show > .btn-success.dropdown-toggle {
+
+.btn-check:checked+.btn-success, .btn-check:active+.btn-success, .btn-success:active, .btn-success.active, .show>.btn-success.dropdown-toggle {
   color: #fff;
   background-color: rgb(9, 175, 9);
   border-color: rgb(27, 201, 27);
 }
-.btn-check:checked + .btn-success:focus, .btn-check:active + .btn-success:focus, .btn-success:active:focus, .btn-success.active:focus, .show > .btn-success.dropdown-toggle:focus {
+
+.btn-check:checked+.btn-success:focus, .btn-check:active+.btn-success:focus, .btn-success:active:focus, .btn-success.active:focus, .show>.btn-success.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(15, 238, 7, 0.5);
 }
+
 .btn-success:disabled, .btn-success.disabled {
   color: #fff;
   background-color: limegreen;
